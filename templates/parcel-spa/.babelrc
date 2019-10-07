@@ -1,0 +1,7 @@
+{
+    "presets": [["env",{ "exclude": ["transform-es2015-classes"] }]],
+    "plugins": [
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        // ["@babel/plugin-transform-classes", {"loose": true}]
+    ]
+}

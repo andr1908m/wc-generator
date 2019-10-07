@@ -1,0 +1,33 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bs": "browser-sync start --config bs-config.js",
+    "parcel": "parcel watch src/index.html",
+    "start": "concurrently 'npm:bs' 'npm:parcel'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.7",
+    "sass": "^1.23.0",
+    "typescript": "^3.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-classes": "^7.5.5",
+    "concurrently": "^4.1.2",
+    "parcel-plugin-lit-scss": "^1.0.0"
+  },
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.3.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "custom-elements-hmr-polyfill": "^1.0.0-beta.8",
+    "lit-element": "^2.2.1",
+    "webcomponentsjs": "^1.0.2"
+  }
+}

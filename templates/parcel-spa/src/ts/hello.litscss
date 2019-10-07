@@ -1,0 +1,5 @@
+@import "./helloo";
+
+.hello {
+    color:blue;
+}
