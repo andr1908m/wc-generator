@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const {ncp} = require("ncp")
-const {spawn} = require("child_process")
 const prefix = require("global-prefix")
 const inquirer = require('inquirer')
 
@@ -39,7 +38,7 @@ inquirer
   .then(answers => {
     const template = choice(answers.projectType)
     ncp(
-      `${prefix}/lib/node_modules/wc-generator/templates/${template}`,
+      `${prefix}/lib/node_modules/wc-parcel-generator/templates/${template}`,
       `${process.cwd()}/${answers.name}`,
       (err)=>{
         if (err) {

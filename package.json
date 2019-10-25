@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "global-prefix": "^3.0.0",
     "inquirer": "^7.0.0",
     "ncp": "^2.0.0"
   }
